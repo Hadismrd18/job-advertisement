@@ -12,8 +12,8 @@ export default function Card({ data }) {
     dispatch(filterAdd(skill));
   };
   return (
-    <div className="w-full bg-white flex flex-col items-start min-[376px]:flex-row min-[376px]:items-center rounded shadow-xl my-14 relative py-10 px-4 ">
-      <div className="w-full relative flex flex-col min-[376px]:flex-row min-[376px]:gap-7 items-start">
+    <div className="w-full bg-white flex flex-col items-start sm:flex-row sm:items-center rounded shadow-xl my-14 relative py-10 px-4 ">
+      <div className="w-full relative flex flex-col sm:flex-row sm:gap-7 items-start">
         <img
           src={data.logo}
           className=",ax-[376px]:absolute top-[-75px] left-0 size-16 min-[1440px]:size-20"
@@ -51,7 +51,7 @@ export default function Card({ data }) {
         </div>
         {/*  */}
       </div>
-      <div className="h-[2px] w-full bg-lightCyan my-2 min-[376px]:hidden"></div>
+      <div className="h-[2px] w-full bg-lightCyan my-2 sm:hidden"></div>
       <div className="flex items-center flex-wrap gap-3 justify-start">
         <span
           onClick={() => addNewSkill(data.role)}
