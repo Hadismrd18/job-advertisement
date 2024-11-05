@@ -31,11 +31,11 @@ const clearList = ()=>{
           <img src={bgHeaderDesktop} className="min-[376px]:block " />
         </div>
         <div className="w-full h-full py-8 px-4 min-[1440px]:px-8 min-[1440px]:w-[75%] mx-auto relative">
-          <div className="absolute bg-white gap-10 w-[80%] h-16 rounded  top-[-30px] left-[10%] flex items-center justify-between p-3">
+          <div className="absolute bg-white flex-wrap gap-10 w-[80%] h-auto sm:h-16 rounded  top-[-30px] left-[10%] flex items-center justify-between p-3">
             <div className="flex w-full gap-5">
               {skillData.map((skill) => {
                 return (
-                  <div className="flex justify-between rounded bg-lightCyan h-6  items-center">
+                  <div className="flex  justify-between rounded bg-lightCyan h-6  items-center">
                     <span className="block px-2 text-darkCyan">{skill}</span>
                     <RxCross2
                       onClick={() => removeFromSkillList(skill)}
